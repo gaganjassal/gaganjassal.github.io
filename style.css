@@ -22,7 +22,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:64px}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;transition:background .2s,color .2s}
 a{color:var(--accent)}
-.wrap{max-width:820px;margin:0 auto;padding:0 24px}
+.wrap{max-width:984px;margin:0 auto;padding:0 24px}
 h1,h2,h3{margin:0;line-height:1.2;letter-spacing:-.01em}
 h1{font-size:clamp(2.2rem,5vw,3rem);font-weight:600}
 h2{font-size:1.5rem;font-weight:600;margin-bottom:6px}
@@ -40,7 +40,7 @@ section.wrap{padding-top:112px}
 
 section.hero{padding-top:88px}
 .hero .role{font-size:1.2rem;color:var(--muted);margin:8px 0 18px;max-width:46ch}
-.hero .lead{max-width:60ch;margin:0 0 24px}
+.hero .lead{max-width:none;margin:0 0 24px}
 .cta{display:flex;gap:10px;flex-wrap:wrap}
 .btn{display:inline-block;padding:9px 18px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);text-decoration:none;font-weight:500;font-size:.95rem}
 .btn:hover{border-color:var(--accent)}
@@ -127,3 +127,22 @@ summary .o{grid-column:1;color:var(--muted);font-size:.92rem}
 .hero .now-role{color:var(--text);font-weight:600;font-size:1.35rem}
 .hero .next-role{margin-top:2px}
 .hero .role{max-width:none}
+
+@media (max-width:720px){
+  html{scroll-padding-top:96px}
+  .nav .wrap{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px;gap:2px 16px}
+  .nav .brand{flex:0 0 calc(100% - 54px);order:0;margin-right:0}
+  .nav .icon-btn{order:1}
+  .nav a.l{display:inline;order:2;font-size:.85rem;padding:4px 0}
+  .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .facts b{font-size:1.05rem}
+  details{padding:12px 14px}
+  .cert{gap:14px;padding:14px 16px;font-size:1.05rem}
+  .cert-icon,.cert-icon.badge img{width:72px;height:72px}
+}
+@media (max-width:720px){
+  .nav .wrap{gap:0 12px}
+  .nav a.l{font-size:.8rem}
+}
+#experience h2{margin-bottom:28px}
+@media (max-width:720px){.facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}}
