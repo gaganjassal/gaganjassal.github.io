@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gagan Jassal | Cloud and Platform Engineer</title>
+<meta name="description" content="Cloud and platform engineer with 5+ years on Azure and recent AWS and AI infrastructure work. Terraform, Kubernetes, CI/CD.">
+<meta property="og:title" content="Gagan Jassal | Cloud and Platform Engineer">
+<meta property="og:description" content="Azure and AWS platform engineer. Terraform, Kubernetes, CI/CD, AI infrastructure.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var t = localStorage.getItem("theme");
+    if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">GJ</a>
+  <nav aria-label="Primary">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" class="icon-btn" aria-label="Toggle light and dark theme">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</header>
+
+<main id="top">
+  <section class="hero container">
+    <div class="hero-text">
+      <p class="eyebrow">Toronto, Canada &middot; open to permanent roles</p>
+      <h1>Gagan Jassal</h1>
+      <p class="role">Cloud and platform engineer</p>
+      <p class="lead">I build secure, repeatable infrastructure on Azure and AWS. Fifteen years in software, five-plus on Azure, now working on Kubernetes and AI platforms.</p>
+      <div class="chips">
+        <span class="chip azure">Azure</span>
+        <span class="chip aws">AWS</span>
+        <span class="chip">Terraform</span>
+        <span class="chip">Kubernetes</span>
+        <span class="chip">Azure DevOps</span>
+        <span class="chip">Helm</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="assets/Gagan_Jassal_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <ul class="stats">
+        <li><strong>15+</strong><span>years in software</span></li>
+        <li><strong>5+</strong><span>years on Azure</span></li>
+        <li><strong>8</strong><span>Azure, AWS and Kubernetes certifications</span></li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/photo-placeholder.svg" alt="Portrait placeholder for Gagan Jassal" width="320" height="320">
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <p class="section-sub">Click a role to see what I did. The line colour shows the era: <span class="key dotnet"></span>.NET, <span class="key azure"></span>Azure, <span class="key aws"></span>AWS and AI.</p>
+
+    <ol class="timeline">
+
+      <li class="tl-item era-aws" data-open="true">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="true">
+          <span class="tl-date">Sep 2026 &ndash; Present</span>
+          <span class="tl-title">IaC Engineer</span>
+          <span class="tl-org">Accenture &middot; Telecommunications client</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Building modular Terraform to provision secure AWS Databricks environments for enterprise analytics and ML workloads.</li>
+          </ul>
+          <div class="tags"><span>Terraform</span><span>AWS</span><span>Databricks</span></div></div>
+        </div>
+      </li>
+
+      <li class="tl-item era-aws">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="false">
+          <span class="tl-date">Apr 2026 &ndash; Oct 2026</span>
+          <span class="tl-title">AI Platform Engineer</span>
+          <span class="tl-org">Accenture &middot; Manufacturing client</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Deployed the <a href="https://github.com/Accenture/airefinery-sdk" target="_blank" rel="noopener">Accenture AI Refinery</a> platform on AWS EKS and delivered a proof of concept on schedule for internal development teams.</li>
+            <li>Designed a hybrid inference stack: a self-hosted embedding model on GPU nodes plus a managed LLM over private endpoints, keeping data governance strict with zero data retention.</li>
+            <li>Packaged and exposed the platform with Helm, ALB ingress, ACM-managed TLS and Route 53 DNS.</li>
+          </ul>
+          <div class="tags"><span>AWS EKS</span><span>Helm</span><span>PrivateLink</span><span>ALB</span><span>Route 53</span><span>GPU nodes</span></div></div>
+        </div>
+      </li>
+
+      <li class="tl-item era-azure">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="false">
+          <span class="tl-date">Apr 2025 &ndash; Mar 2026</span>
+          <span class="tl-title">DevOps Consultant</span>
+          <span class="tl-org">Accenture &middot; Public Sector client</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Built reusable Terraform modules and multi-stage Azure DevOps pipelines, cutting configuration drift across environments.</li>
+            <li>Resolved private-endpoint, VNet and hybrid networking issues in zero-public-access environments.</li>
+            <li>Built a Terraform module versioning and release pipeline on JFrog Artifactory for controlled reuse across teams.</li>
+          </ul>
+          <div class="tags"><span>Terraform</span><span>Azure DevOps</span><span>Private endpoints</span><span>JFrog Artifactory</span></div></div>
+        </div>
+      </li>
+
+      <li class="tl-item era-azure gap">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="false">
+          <span class="tl-date">Apr 2024 &ndash; Apr 2025</span>
+          <span class="tl-title">Upskilling and certification</span>
+          <span class="tl-org">K21 Academy</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Completed a year of structured cloud training and earned Azure Fundamentals, Azure AI Fundamentals, Azure Administrator and DevOps Engineer Expert certifications.</li>
+          </ul>
+          <div class="tags"><span>AZ-900</span><span>AI-900</span><span>AZ-104</span><span>AZ-400</span></div></div>
+        </div>
+      </li>
+
+      <li class="tl-item era-azure gap muted">
+        <span class="node"></span>
+        <div class="tl-static">
+          <span class="tl-date">Jun 2023 &ndash; Apr 2024</span>
+          <span class="tl-title">Personal time off</span>
+        </div>
+      </li>
+
+      <li class="tl-item era-azure">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="false">
+          <span class="tl-date">Jan 2018 &ndash; Jun 2023</span>
+          <span class="tl-title">DevOps / Cloud Engineer</span>
+          <span class="tl-org">IDC Canada</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Built CI/CD for ASP.NET apps on Azure DevOps and Terraform, improving deployment efficiency by 80%.</li>
+            <li>Automated Azure provisioning with ARM templates and PowerShell, cutting manual errors by 70% across three environments.</li>
+            <li>Ran Docker and AKS microservices at 99% uptime and resolved Azure deployment issues across App Services, AKS and VMs within SLA.</li>
+            <li>Mentored five developers on version control, .NET and CI/CD, lifting feature release speed by 30% in three months.</li>
+          </ul>
+          <div class="tags"><span>Azure DevOps</span><span>Terraform</span><span>ARM</span><span>AKS</span><span>PowerShell</span></div></div>
+        </div>
+      </li>
+
+      <li class="tl-item era-dotnet">
+        <span class="node"></span>
+        <button class="tl-head" aria-expanded="false">
+          <span class="tl-date">May 2011 &ndash; Dec 2017</span>
+          <span class="tl-title">Earlier career: .NET and web developer</span>
+          <span class="tl-org">IDC Canada &middot; Help Desk Technology Corp &middot; Red-D-Arc</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+        <div class="tl-body"><div>
+          <ul>
+            <li>Built and maintained 12+ ASP.NET applications with scoring models and dynamic PDF reports, backed by tuned SQL Server schemas.</li>
+            <li>Enhanced 13 of 74 modules in an enterprise service desk and built a responsive self-service portal, raising mobile accessibility by 25%.</li>
+            <li>Redesigned a corporate ASP.NET website, boosting traffic and engagement by 25%.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>ASP.NET</span><span>SQL Server</span><span>JavaScript</span></div></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Selected projects</h2>
+    <p class="section-sub">Problem, approach, result.</p>
+    <div class="cards">
+      <article class="card">
+        <h3>Infrastructure as Code</h3>
+        <p><b>Problem.</b> Manual Azure provisioning drifted across three environments.</p>
+        <p><b>Approach.</b> Terraform modules and PowerShell, run from Azure DevOps pipelines with version-controlled templates.</p>
+        <p class="result">70% less manual configuration time</p>
+        <div class="tags"><span>Terraform</span><span>PowerShell</span><span>Azure DevOps</span></div>
+      </article>
+      <article class="card">
+        <h3>Secure cloud networking</h3>
+        <p><b>Problem.</b> Workloads needed protection while staying connected to on-premises systems.</p>
+        <p><b>Approach.</b> VNets, NSGs, Azure Firewall, VPN gateways, load balancers and Application Gateways.</p>
+        <p class="result">Secure, reliable hybrid connectivity</p>
+        <div class="tags"><span>Azure Firewall</span><span>VPN Gateway</span><span>NSG</span></div>
+      </article>
+      <article class="card">
+        <h3>Containers and orchestration</h3>
+        <p><b>Problem.</b> Manual scaling of cloud-native apps was slow and fragile.</p>
+        <p><b>Approach.</b> Docker, AKS and Helm with resource limits, autoscaling, RBAC and automated builds.</p>
+        <p class="result">99.9% uptime and faster scaling</p>
+        <div class="tags"><span>AKS</span><span>Helm</span><span>RBAC</span></div>
+      </article>
+      <article class="card">
+        <h3>Cloud monitoring</h3>
+        <p><b>Problem.</b> Issues were found late, which meant avoidable downtime.</p>
+        <p><b>Approach.</b> Azure Monitor, Application Insights and Log Analytics with dashboards and automated alerts.</p>
+        <p class="result">Faster troubleshooting, less downtime</p>
+        <div class="tags"><span>Azure Monitor</span><span>Log Analytics</span><span>App Insights</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Cloud</h3><p>Azure, AWS</p></div>
+      <div><h3>Infrastructure as code</h3><p>Terraform, ARM templates, Bicep</p></div>
+      <div><h3>CI/CD</h3><p>Azure DevOps, GitHub Actions, Jenkins</p></div>
+      <div><h3>Containers</h3><p>Docker, Kubernetes (AKS, EKS), Helm</p></div>
+      <div><h3>Languages</h3><p>C#, Python, PowerShell, Bash</p></div>
+      <div><h3>Data</h3><p>SQL Server</p></div>
+    </div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
+    <p class="section-sub">Each badge links to its public verification page.</p>
+    <div class="certs">
+      <a class="cert" href="https://learn.microsoft.com/api/credentials/share/en-us/GJassal/129239AA70B577C5?sharingId=67816F309096D1EB" target="_blank" rel="noopener"><span class="cert-org azure">Microsoft</span>Azure Solutions Architect Expert</a>
+      <a class="cert" href="https://learn.microsoft.com/api/credentials/share/en-us/GJassal/5CE96B18124393E?sharingId=67816F309096D1EB" target="_blank" rel="noopener"><span class="cert-org azure">Microsoft</span>DevOps Engineer Expert</a>
+      <a class="cert" href="https://learn.microsoft.com/api/credentials/share/en-us/GJassal/B8D6382DD8989ED3?sharingId=67816F309096D1EB" target="_blank" rel="noopener"><span class="cert-org azure">Microsoft</span>Azure Administrator Associate</a>
+      <a class="cert" href="https://learn.microsoft.com/api/credentials/share/en-us/GJassal/C0BA869C25C26479?sharingId=67816F309096D1EB" target="_blank" rel="noopener"><span class="cert-org azure">Microsoft</span>Azure Fundamentals</a>
+      <a class="cert" href="https://learn.microsoft.com/api/credentials/share/en-us/GJassal/2B105CE5B30C38EF?sharingId=67816F309096D1EB" target="_blank" rel="noopener"><span class="cert-org azure">Microsoft</span>Azure AI Fundamentals</a>
+      <a class="cert" href="https://www.credly.com/badges/5b18f580-e63e-4e2a-afbf-f6248aed9527/public_url" target="_blank" rel="noopener"><span class="cert-org cncf">AWS</span>AWS Certified AI Practitioner</a>
+      <a class="cert" href="https://www.credly.com/badges/be5889ea-23ba-40ad-8e41-6f8f96cd0cbb/public_url" target="_blank" rel="noopener"><span class="cert-org cncf">CNCF</span>Certified Kubernetes Administrator</a>
+      <a class="cert" href="https://www.credly.com/badges/4660c201-014a-4178-8597-6eca5c71e549/public_url" target="_blank" rel="noopener"><span class="cert-org cncf">CNCF</span>Certified Kubernetes Application Developer</a>
+    </div>
+    <h3 class="edu-h">Education</h3>
+    <ul class="edu">
+      <li><strong>Post Graduate Diploma, Wireless Networking</strong> &middot; George Brown College, Toronto &middot; 2008</li>
+      <li><strong>B.Tech, Computer Science and Engineering</strong> &middot; Guru Nanak Dev University, India &middot; 2007</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container contact">
+    <h2>Let's talk</h2>
+    <p class="section-sub">I'm looking for a permanent cloud or platform engineering role.</p>
+    <div class="cta center">
+      <a class="btn primary" href="mailto:gdsjassal.er@live.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/gaganjassal/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/gaganjassal" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="assets/Gagan_Jassal_Resume.pdf" download>Resume (PDF)</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer container">
+  <span>&copy; <span id="year">2026</span> Gagan Jassal</span>
+  <span>Built with plain HTML, CSS and JavaScript</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
