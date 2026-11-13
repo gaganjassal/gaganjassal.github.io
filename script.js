@@ -38,3 +38,18 @@
     }
   });
 })();
+
+(function () {
+  var group = document.querySelector(".tl-group[data-start]");
+  if (!group) return;
+  var parts = group.dataset.start.split("-");
+  var now = new Date();
+  var months = (now.getFullYear() - Number(parts[0])) * 12 + (now.getMonth() + 1 - Number(parts[1])) + 1;
+  if (months < 1) return;
+  var y = Math.floor(months / 12);
+  var m = months % 12;
+  var text = [];
+  if (y) text.push(y + (y === 1 ? " yr" : " yrs"));
+  if (m) text.push(m + (m === 1 ? " mo" : " mos"));
+  group.querySelector(".tenure").textContent = text.join(" ");
+})();
